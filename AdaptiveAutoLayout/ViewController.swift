@@ -51,13 +51,13 @@ class ViewController: UIViewController {
     var didSetupConstraints = false
     
     override func updateViewConstraints() {
-        super.updateViewConstraints()
-        
         if (!didSetupConstraints) {
             // Setup the "real" constraints for the views
             setupConstraintsForRedView(redView, blueView: blueView)
             didSetupConstraints = true
         }
+        
+        super.updateViewConstraints()
     }
     
     /** Creates and activates constraints for the red and blue views passed in. Note: both views must share a common superview. */
