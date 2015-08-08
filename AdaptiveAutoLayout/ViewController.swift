@@ -8,12 +8,12 @@
 import UIKit
 
 /** A simple function that interpolates between two CGFloat values. */
-func interpolateCGFloat(#start: CGFloat, #end: CGFloat, #progress: CGFloat) -> CGFloat {
+func interpolateCGFloat(start start: CGFloat, end: CGFloat, progress: CGFloat) -> CGFloat {
     return start * (1.0 - progress) + end * progress
 }
 
 /** A simple function that interpolates between two CGRect values. */
-func interpolateCGRect(#start: CGRect, #end: CGRect, #progress: CGFloat) -> CGRect {
+func interpolateCGRect(start start: CGRect, end: CGRect, progress: CGFloat) -> CGRect {
     let x = interpolateCGFloat(start: start.origin.x, end: end.origin.x, progress: progress)
     let y = interpolateCGFloat(start: start.origin.y, end: end.origin.y, progress: progress)
     let width = interpolateCGFloat(start: start.size.width, end: end.size.width, progress: progress)
