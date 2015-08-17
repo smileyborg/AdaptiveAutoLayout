@@ -1,9 +1,8 @@
 //
 //  PureLayout.h
-//  v2.0.4
 //  https://github.com/smileyborg/PureLayout
 //
-//  Copyright (c) 2014 Tyler Fox
+//  Copyright (c) 2014-2015 Tyler Fox
 //
 //  This code is distributed under the terms and conditions of the MIT license.
 //
@@ -28,6 +27,14 @@
 
 #ifndef PureLayout_h
 #define PureLayout_h
+
+#import <Foundation/Foundation.h>
+
+//! Project version number for PureLayout.
+FOUNDATION_EXPORT double PureLayoutVersionNumber;
+
+//! Project version string for PureLayout.
+FOUNDATION_EXPORT const unsigned char PureLayoutVersionString[];
 
 #import "ALView+PureLayout.h"
 #import "NSArray+PureLayout.h"

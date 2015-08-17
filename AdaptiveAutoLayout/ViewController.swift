@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PureLayout
 
 /** A simple function that interpolates between two CGFloat values. */
 func interpolateCGFloat(start start: CGFloat, end: CGFloat, progress: CGFloat) -> CGFloat {
@@ -64,7 +65,7 @@ class ViewController: UIViewController {
     func setupConstraintsForRedView(redView: UIView, blueView: UIView) {
         let margin: CGFloat = 30.0
         
-        redView.autoMatchDimension(.Width, toDimension: .Width, ofView: redView.superview, withMultiplier: 0.5)
+        redView.autoMatchDimension(.Width, toDimension: .Width, ofView: redView.superview!, withMultiplier: 0.5)
         redView.autoSetDimension(.Height, toSize: 60.0)
         redView.autoPinEdgeToSuperviewEdge(.Top, withInset: margin)
         redView.autoPinEdgeToSuperviewEdge(.Left, withInset: margin)
